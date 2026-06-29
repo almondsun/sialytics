@@ -22,7 +22,7 @@ notebook = ["jupyterlab>=4,<5"]
 dev = [
   "build>=1.2,<2",
   "mypy>=1.11,<3",
-  "pytest>=8,<9",
+  "pytest>=8,<10",
   "ruff>=0.6,<1",
   "types-beautifulsoup4>=4.12",
   "types-defusedxml>=0.7",
