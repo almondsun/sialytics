@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar una vulnerabilidad
+    url: https://github.com/almondsun/sialytics/security/advisories/new
+    about: Use un reporte privado para vulnerabilidades o riesgos de privacidad.

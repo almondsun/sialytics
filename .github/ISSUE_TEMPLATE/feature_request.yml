@@ -1,0 +1,24 @@
+name: Propuesta de funcionalidad
+description: Proponga una mejora concreta para SIAlytics.
+title: "[Feature]: "
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: ¿Qué necesidad del estudiante o del proyecto no está resuelta?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+      description: Describa el comportamiento esperado y sus límites.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas consideradas
+      description: Incluya opciones más simples o soluciones actuales, si existen.

@@ -1,5 +1,9 @@
 # SIAlytics
 
+[![CI](https://github.com/almondsun/sialytics/actions/workflows/ci.yml/badge.svg)](https://github.com/almondsun/sialytics/actions/workflows/ci.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 SIAlytics extrae localmente la historia académica que el Sistema de Información
 Académica (SIA) muestra a un estudiante de la Universidad Nacional de Colombia y
 genera un libro de Excel orientado al seguimiento de su carrera.
@@ -145,3 +149,6 @@ tokens, estados JSF ni respuestas autenticadas reales.
 ## Licencia
 
 Distribuido bajo la licencia MIT. Consulte [LICENSE](LICENSE).
+
+Las contribuciones son bienvenidas. Consulte [CONTRIBUTING.md](CONTRIBUTING.md) y
+[SECURITY.md](SECURITY.md) antes de enviar cambios o reportar vulnerabilidades.

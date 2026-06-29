@@ -1,0 +1,44 @@
+name: Reporte de error
+description: Reporte un comportamiento reproducible sin incluir datos personales.
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No incluya credenciales, cookies, HTML autenticado, XLSX, ODS ni capturas con información académica personal.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: ¿Qué ocurrió y qué esperaba que ocurriera?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproducción mínima
+      description: Use datos sintéticos o completamente sanitizados.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit
+      placeholder: main o identificador del commit
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno
+      placeholder: Sistema operativo y versión de Python
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacidad
+      options:
+        - label: Confirmo que el reporte no contiene credenciales ni información académica personal.
+          required: true
