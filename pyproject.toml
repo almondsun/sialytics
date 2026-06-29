@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sialytics"
+version = "0.1.0"
+description = "Extracción local y segura de información académica de SIA UNAL"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "defusedxml>=0.7,<1",
+  "lxml>=5,<7",
+  "openpyxl>=3.1,<4",
+  "playwright>=1.45,<2",
+]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab>=4,<5"]
+dev = [
+  "build>=1.2,<2",
+  "mypy>=1.11,<2",
+  "pytest>=8,<9",
+  "ruff>=0.6,<1",
+  "types-beautifulsoup4>=4.12",
+  "types-defusedxml>=0.7",
+  "types-openpyxl>=3.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sialytics"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "S", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["sialytics"]
